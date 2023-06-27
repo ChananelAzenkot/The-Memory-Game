@@ -133,7 +133,7 @@ p .margin {
     margin: 0 12px;
 }
 
-.cheat{
+.cheat {
     filter: brightness(0.7);
 }
 
@@ -141,7 +141,7 @@ p .margin {
     background-color: #5919c7 !important;
 }
 
-.box2{
+.box2 {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -153,7 +153,8 @@ p .margin {
     border-radius: 10px;
 }
 
-#oneInput , #twoInput{
+#oneInput,
+#twoInput {
     width: 220px;
     height: 30px;
     border-radius: 5px;
@@ -164,11 +165,14 @@ p .margin {
     margin: 0 10px;
     margin: 10px;
 }
-#oneInput:focus , #twoInput:focus{
+
+#oneInput:focus,
+#twoInput:focus {
     border: 2px solid #5919c7;
 }
 
-#myInputNum , #myInputRange{
+#myInputNum,
+#myInputRange {
     width: 220px;
     height: 30px;
     border-radius: 5px;
@@ -180,27 +184,114 @@ p .margin {
     margin: 10px;
 }
 
-.labelName{
+.labelName {
     margin: 5px;
     font-size: 20px;
     color: white;
     margin: 0 10px;
 }
 
-.titleBox{
+.titleBox {
     justify-content: center;
     align-items: center;
     display: flex;
     width: 30%;
     height: 280px;
-    background-color:#3bbed5;
+    background-color: #3bbed5;
     flex-direction: row;
     border-radius: 10px;
     margin-left: 15px;
 
 }
 
-.titleBox h1{
+.titleBox h1 {
     font-size: 35px;
 }
 
+@media(max-width:768px) {
+    .titleBox {
+        width: 80%;
+        height: 230px;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 150px;
+        position: absolute;
+    }
+
+    .box2 {
+        width: 90%;
+        margin: 10px;
+    }
+
+    #oneInput,
+    #twoInput {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px;
+        margin: 10px;
+    }
+
+    #myInputNum,
+    #myInputRange {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px;
+        margin: 10px;
+    }
+
+    .labelName {
+        margin: 5px;
+        font-size: 20px;
+        color: white;
+        margin: 0 10px;
+    }
+
+    .titleBox h1 {
+        font-size: 35px;
+    }
+
+    .board {
+        display: inline-grid;
+        overflow: hidden;
+        background-color: #e4e4e4;
+        gap: 6px;
+        padding: 6px;
+        border-radius: 12px;
+        direction: ltr;
+    }
+
+    .board div {
+        width: 50px;
+        height: 50px;
+        background-color: #3bbed5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        border-radius: 12px;
+        transition: 0.3s;
+        box-shadow: inset 0px 0px 8px black;
+    }
+
+    .board div span {
+        display: none;
+        pointer-events: none;
+    }
+
+    .board div.showing {
+        background: #e26000;
+        transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
