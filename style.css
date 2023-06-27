@@ -211,7 +211,7 @@ p .margin {
 @media(max-width:768px) {
     .titleBox {
         width: 80%;
-        height: 230px;
+        height: 280px;
         flex-direction: column;
         margin: 10px;
         margin-top: 150px;
