@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>משחק הזיכרון</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div style="display: none;" class="titleBox">
+    <h1>משחק הזיכרון</h1>
+    <p>מספר ניסיונות: <b class="counter">0</b> <span class="margin"></span> טיימר: <b class="timer">00:00</b>
+    </p>
+    <p id="theNameOne"></p><br>
+    <p id="theNameTwo"></p><br>
+    <button> Help ! </button>
+    </div>
+    <div class="box2">
+        <h1>משחק הזיכרון</h1>
+        <label class="labelName" for="myInput">How many blocks:</label>
+        <input id="myInputNum" type="number" placeholder="Enter a number" />
+        <label class="labelName" for="myInput">range block : </label>
+        <input id="myInputRange" type="number" placeholder="Enter a number range" />
+
+    <label class="labelName">what is the name player 1 ? </label>
+    <input autocomplete="off" id="oneInput" type="text" placeholder="first name player"/><br>
+    <label class="labelName">what is the name player 2 ? </label>
+    <input  autocomplete="off" id="twoInput" type="text" placeholder="secondary name player"/><br>
+    <button onclick="myFunction()">Click</button><br>
+</div>
+
+    <div class="frame">
+        <div style="display: none;" class="board"></div>
+    </div>
+</body>
+
+</html>
