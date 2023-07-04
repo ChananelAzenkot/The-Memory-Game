@@ -12,31 +12,30 @@
 </head>
 
 <body>
+    
+    <div class="forMobile">
     <div style="display: none;" class="titleBox">
-    <h1>Memory Game 🤯 </h1>
+    <h1>🤯 Memory Game</h1>
     <p>מספר ניסיונות: <b class="counter">0</b> <span class="margin"></span> טיימר: <b class="timer">00:00</b>
     </p>
     <p id="theNameOne"></p><br>
     <p id="theNameTwo"></p><br>
     <button> Help ! </button>
     </div>
+        <div class="frame">
+        <div style="display: none;" class="board"></div>
+    </div>
+    </div>
     <div class="box2">
-        <h1>Memory Game 🤯 </h1>
-        <label class="labelName" for="myInput">How many blocks:</label>
-        <input id="myInputNum" type="number" placeholder="Enter a number" />
-        <label class="labelName" for="myInput">range block : </label>
-        <input id="myInputRange" type="number" placeholder="Enter a number range" />
-
-    <label class="labelName">what is the name player 1 ? </label>
-    <input autocomplete="off" id="oneInput" type="text" placeholder="first name player"/><br>
-    <label class="labelName">what is the name player 2 ? </label>
-    <input  autocomplete="off" id="twoInput" type="text" placeholder="secondary name player"/><br>
+        <h1>🤯 Memory Game</h1>
+        <input autocomplete="off" id="oneInput" type="text" placeholder="First Player"/>
+        <input  autocomplete="off" id="twoInput" type="text" placeholder="Secondary Player"/>
+        <input id="myInputNum" type="number" placeholder="Enter A Columns" />
+        <input id="myInputRange" type="number" placeholder="Enter A Number Range" />
     <button onclick="myFunction()">Click</button><br>
 </div>
 
-    <div class="frame">
-        <div style="display: none;" class="board"></div>
-    </div>
+
 </body>
 
 </html>

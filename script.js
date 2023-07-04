@@ -14,8 +14,8 @@ function writeAname() {
 
   theNameOne.innerHTML = `
   Player one is: ${playerOneName}
-   - Attempts: ${playerOneAttempts}
-   - Score: ${playerOneScore}`;
+  - Attempts: ${playerOneAttempts}
+  - Score: ${playerOneScore}`;
   theNameTwo.innerHTML = `
   Player two is: ${playerTwoName}
   - Attempts: ${playerTwoAttempts}
