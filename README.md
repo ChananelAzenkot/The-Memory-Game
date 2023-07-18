@@ -27,3 +27,4 @@ It is important !! Between 1 - 6
 6. Score and Win: Count pairs, player with most wins.
 
 
+validation
