@@ -25,6 +25,3 @@ It is important !! Between 1 - 6
 4. Find Matching Pairs: Keep pairs, flip back non-matching cards.
 5. Remember and Strategics: Memorize positions to make future matches.
 6. Score and Win: Count pairs, player with most wins.
-
-
-validation
