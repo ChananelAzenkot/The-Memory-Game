@@ -8,9 +8,14 @@ let playerOneScore = 0;
 let playerTwoAttempts = 0;
 let playerTwoScore = 0;
 
-function writeAname() {
+function write_A_name() {
   const playerOneName = oneInput.value;
   const playerTwoName = twoInput.value;
+
+  if (playerOneName == "" || playerTwoName == "") {
+    alert("Please enter a name for both players");
+    window.location.reload();
+  }
 
   theNameOne.innerHTML = `
   Player one is: ${playerOneName}
@@ -32,9 +37,18 @@ function myFunction() {
   range = parseInt(document.getElementById("myInputRange").value);
   theBox.style.display = "none";
   titleBox.style.display = "block";
-  writeAname();
-  test();
-  test2();
+
+   if (isNaN(amount) || isNaN(range) || amount >= 7 || range <= 0) {
+     alert("Please enter valid numbers for amount and range.");
+      if (amount >= 7) {
+      alert("Please enter a number between 1 and 6 in the Columns box.");
+    }
+     window.location.reload();
+     return;
+   }
+  write_A_name();
+  createBoard();
+  showBoard();
   timer();
 }
 
@@ -45,7 +59,7 @@ let timerInterval;
 
 const board = document.querySelector(".board");
 
-function test() {
+function createBoard() {
   board.style.display = "grid";
   board.style.gridTemplateColumns = `repeat(6, 1fr)`;
 
@@ -55,7 +69,7 @@ function test() {
   }
 }
 
-function test2() {
+function showBoard() {
   for (let i = 1; i <= amount * 2; i++) {
     const rand = Math.floor(Math.random() * numbers.length);
 
